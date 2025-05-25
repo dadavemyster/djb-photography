@@ -1,0 +1,158 @@
+/* 
+File: styles.css 
+GUI Assignment:  Creating Your First Web Page
+David Boulos, UML C.S., David_Boulos@student.uml.edu
+Copyright (c) 2025 by David.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+Updated by DB on May 24, 2025 at 11:54 PM
+*/
+
+/* Body styling - Defines the overall appearance of the page, including fonts, layout, and background. */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font style with fallbacks. */
+    margin: 0; /* Removes default margin to ensure content spans the full width. */
+    padding: 0; /* Provides internal spacing. */
+    text-align: center; /* Centers all text content. */
+	background-color: #555555; /* Applies a background color. */
+    color: #EEEEEE; /* Text color. */
+}
+
+/* Header styling - Creates a distinct top section with a contrasting background and padding. */
+header {
+    display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Places items on left and right */
+    align-items: center; /* Aligns items vertically */
+    background-color: #333333; /* Applies a background color. */
+    color: #EEEEEE; /* Text color. */
+    padding: 10px 20px 10px; /* Provides internal spacing. */
+    font-size: 1.5rem; /* Font size. */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Left side: Name */
+.header-title {
+    font-size: 2rem; /* Font size of title. */
+}
+
+/* Header Right side: Navigation */
+nav ul {
+    list-style: none; /* Removes default bullets from list. */
+    padding: 0; /* Provides internal spacing. */
+    display: flex; /* Horizontal menu */
+    gap: 15px; /* Adds space between items */
+}
+
+/* Styles for individual menu items. */
+nav ul li {
+    display: inline; /* Makes the list items appear in a horizontal row. */
+    margin: 0 15px; /* Adds space between menu items. */
+}
+
+/* Links inside the navigation. */
+nav ul li a {
+    color: #EEEEEE; /* Text color. */
+    text-decoration: none; /* Removes default underline from links. */
+    transition: color 0.3s ease-in-out; /* Specifies the transition type. */
+}
+
+/* Links inside the navigation with mouse pointer hovered over. */
+nav ul li a:hover {
+    color: gold; /* Text color. */
+}
+
+/* Styling for the large introduction image section */
+.hero {
+    font-family: cursive; /* Sets the font style for text inside the section */
+    position: relative; /* Positions the element relative to its normal location */
+    width: 100%; /* Makes the hero section span the entire width of the screen */
+    height: 100vh; /* Sets the height to be the full viewport height */
+    background-image: url('../images/hero-image.jpg'); /* Loads the background image from the specified path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image in the background */
+    display: flex; /* Enables flexbox for easy alignment */
+    align-items: center; /* Vertically centers content within the section */
+    justify-content: center; /* Horizontally centers content */
+    text-align: center; /* Ensures text inside the section is centered */
+}
+
+
+/* Hero overlay top-left. */
+.hero-top-left {
+    position: absolute;
+    top: 25px; /* Adjust distance from top. */
+    left: 40px; /* Adjust distance from left. */
+    font-size: 2.5rem; /* Font size. */
+    color: #EEEEEE; /* Font color. */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Creates a shadow effect behind text. */
+}
+
+/* Hero overlay bottom-left. */
+.hero-bottom-left {
+    position: absolute;
+    bottom: 25px; /* Adjust distance from bottom */
+    left: 40px; /* Adjust distance from left */
+    font-size: 3.0rem; /* Font size. */
+    color: gold; /* Font color. */
+    text-align: left; /* Text align. */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Helps with readability */
+}
+
+/* About me container styling. */
+.about-me {
+    display: flex; /* Enables side-by-side positioning */
+    align-items: flex-start; /* Centers content vertically */
+	justify-content: flex-start; /* Push content to the left */
+}
+
+/* Portrait styling */
+.portrait {
+    width: 50%;
+    height: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow for visibility. */
+	align-self: flex-start;
+}
+
+/* About text */
+.about-text {
+    width: 50%;
+    flex: 1; /* Allows text to take remaining space */
+    font-size: 1.2rem;
+    text-align: left; /* Align text to the left */
+    color: #EEEEEE; /* Font color. */
+    margin: 0px 50px; /* Sets margin. */
+}
+
+/* Gallery Header style. */
+.gallery-header {
+	background-color: #EEEEEE; /* Background color. */
+	color: black; /* Text color. */
+	padding: 40px 60px 20px 60px;
+}
+
+/* Gallery style. */
+.gallery {
+	margin-top: 0px;
+	background-color: black; /* Text color. */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Expanding columns */
+    gap: 10px;
+	padding: 60px 60px 60px 60px; /* Provides internal spacing. */
+}
+
+/* Gallery image style. */
+.gallery img {
+    width: 100%; /* Makes the image responsive within its column */
+    height: auto; /* Maintains the original aspect ratio */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow for visibility. */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
+    margin: auto;
+}
+
+/* Footer styling - Defines appearance and spacing for the footer section */
+footer {
+    margin-top: 20px; /* Adds space above the footer. */
+    padding: 10px; /* Provides internal spacing. */
+    background-color: #333333; /* Applies a background color. */
+    color: #EEEEEE; /* Font color. */
+	font-style: italic; /* Font style. */
+}
