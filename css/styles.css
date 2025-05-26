@@ -4,7 +4,7 @@ GUI Assignment:  Creating Your First Web Page
 David Boulos, UML C.S., David_Boulos@student.uml.edu
 Copyright (c) 2025 by David.  All rights reserved.  May be freely copied or 
 excerpted for educational purposes with credit to the author. 
-Updated by DB on May 24, 2025 at 11:54 PM
+Updated by DB on May 25, 2025 at 11:54 AM
 */
 
 /* Body styling - Defines the overall appearance of the page, including fonts, layout, and background. */
@@ -17,7 +17,7 @@ body {
     color: #EEEEEE; /* Text color. */
 }
 
-/* Header styling - Creates a distinct top section with a contrasting background and padding. */
+/* Header styling - Creates a distinct top section with an emphasis on legibility and navigation. */
 header {
     display: flex; /* Enables flexbox */
     justify-content: space-between; /* Places items on left and right */
@@ -29,12 +29,12 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Left side: Name */
+/* Header styling - Left side - Name */
 .header-title {
     font-size: 2rem; /* Font size of title. */
 }
 
-/* Header Right side: Navigation */
+/* Header styling - Right side - Navigation */
 nav ul {
     list-style: none; /* Removes default bullets from list. */
     padding: 0; /* Provides internal spacing. */
@@ -60,7 +60,18 @@ nav ul li a:hover {
     color: gold; /* Text color. */
 }
 
-/* Styling for the large introduction image section */
+/* Footer styling - Defines appearance and spacing for the footer section */
+footer {
+    margin-top: 20px; /* Adds space above the footer. */
+    padding: 10px; /* Provides internal spacing. */
+    background-color: #333333; /* Applies a background color. */
+    color: #EEEEEE; /* Font color. */
+	font-style: italic; /* Font style. */
+}
+
+/* Home Page specific styling. */
+
+/* Styling for the hero-section - a large introduction image section to capture attention and invoke interest. */
 .hero {
     font-family: cursive; /* Sets the font style for text inside the section */
     position: relative; /* Positions the element relative to its normal location */
@@ -76,7 +87,7 @@ nav ul li a:hover {
 }
 
 
-/* Hero overlay top-left. */
+/* Hero overlay for top-left words. */
 .hero-top-left {
     position: absolute;
     top: 25px; /* Adjust distance from top. */
@@ -86,7 +97,7 @@ nav ul li a:hover {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Creates a shadow effect behind text. */
 }
 
-/* Hero overlay bottom-left. */
+/* Hero overlay for bottom-left words. */
 .hero-bottom-left {
     position: absolute;
     bottom: 25px; /* Adjust distance from bottom */
@@ -97,14 +108,16 @@ nav ul li a:hover {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Helps with readability */
 }
 
-/* About me container styling. */
+/* About Me page specific styling. */
+
+/* AboutMe container styling. This container has two halfs, a portrait and a summary. */
 .about-me {
     display: flex; /* Enables side-by-side positioning */
     align-items: flex-start; /* Centers content vertically */
 	justify-content: flex-start; /* Push content to the left */
 }
 
-/* Portrait styling */
+/* Portrait styling - This container will container an image neatly aligned with the summary. */
 .portrait {
     width: 50%;
     height: auto;
@@ -112,7 +125,7 @@ nav ul li a:hover {
 	align-self: flex-start;
 }
 
-/* About text */
+/* Portrait Summary styling - This container will contain a text summary alongside the portrait. */
 .about-text {
     width: 50%;
     flex: 1; /* Allows text to take remaining space */
@@ -122,14 +135,16 @@ nav ul li a:hover {
     margin: 0px 50px; /* Sets margin. */
 }
 
-/* Gallery Header style. */
+/* Gallery Page specific stlying. */
+
+/* Gallery Header style - Used on the top of each gallery section. */
 .gallery-header {
 	background-color: #EEEEEE; /* Background color. */
 	color: black; /* Text color. */
 	padding: 40px 60px 20px 60px;
 }
 
-/* Gallery style. */
+/* Gallery style - For arranging the pictures and presenting them clearly and symetrically. */
 .gallery {
 	margin-top: 0px;
 	background-color: black; /* Text color. */
@@ -139,20 +154,11 @@ nav ul li a:hover {
 	padding: 60px 60px 60px 60px; /* Provides internal spacing. */
 }
 
-/* Gallery image style. */
+/* Gallery image style - for each image contained in the gallery. */
 .gallery img {
     width: 100%; /* Makes the image responsive within its column */
     height: auto; /* Maintains the original aspect ratio */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow for visibility. */
     object-fit: contain; /* Ensures the entire image is visible without cropping */
     margin: auto;
-}
-
-/* Footer styling - Defines appearance and spacing for the footer section */
-footer {
-    margin-top: 20px; /* Adds space above the footer. */
-    padding: 10px; /* Provides internal spacing. */
-    background-color: #333333; /* Applies a background color. */
-    color: #EEEEEE; /* Font color. */
-	font-style: italic; /* Font style. */
 }
